@@ -286,6 +286,8 @@ header {
   }
   .transformed__content {
     transform: translateY(150px);
+    position: relative;
+    z-index: 99;
   }
 }
 
