@@ -232,7 +232,9 @@ header {
   .Projects .content {
     margin-top: 30px; }
   .Projects .transformed__content {
-    transform: translateY(150px); }
+    transform: translateY(150px);
+    position: relative;
+    z-index: 99; }
 
 .Projects {
   background-color: #ffffff; }
