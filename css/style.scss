@@ -514,32 +514,28 @@ header {
 }
 
 .project__date {
-  width: 50%;
-  padding: 50px 24px 4px 24px;
+  width: 100%;
   color: #9c9ec7;
-  font-size: 18px;
+  font-size: 17px;
   position: absolute;
-  left: 31%;
+  left: 0;
   z-index: 12;
-  top: 45px;
+  top: 0;
+  padding: 20px 24px 0;
 }
 
 .right__part__bg,
 .left__part__bg {
   position: absolute;
   width: 30%;
-  
 }
-.right__part__bg{
+.right__part__bg {
   right: -0;
   width: 32%;
   top: 45px;
 }
 
-.left__part__bg{
+.left__part__bg {
   bottom: -59%;
   left: 0;
-  
-
-
 }
