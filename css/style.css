@@ -76,16 +76,22 @@ header {
   font-size: 1.2em;
   font-weight: 700; }
 
-.main h2 span {
+.intro {
+  font-size: 24px; }
+
+.main h2 {
   display: inline-block;
   margin-top: 0px;
   color: #9c9ec7;
   font-size: 2.3em;
   font-weight: 900; }
+  .main h2 .intro {
+    color: #2b318f;
+    font-size: 20px; }
 
 .main h3 {
   color: #2b318f;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -128,13 +134,14 @@ header {
     color: #2b318f;
     background-color: #edcce7;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 700;
     display: inline-block;
     padding: 0.5em 2em;
     letter-spacing: 1px;
     border-radius: 15px;
-    transition: 0.5s ease; }
+    transition: 0.5s ease;
+    padding-bottom: 0.7em; }
     @media (max-width: 991px) {
       .about__me a {
         font-size: 1rem; } }
@@ -228,15 +235,15 @@ header {
     flex-direction: column; }
     .Projects .Project-title h3 {
       font-weight: 700;
-      font-size: 1.7rem; }
+      font-size: 1.2rem; }
     .Projects .Project-title a {
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #2b318f;
       text-transform: capitalize; }
   .Projects .Project-image img {
-    width: 90%; }
+    width: 100%; }
   .Projects .Project-info {
     padding: 1em 2.8em 2em 2.8em; }
   .Projects .content {
@@ -251,10 +258,11 @@ header {
 
 .Project-cards {
   background-color: #9c9cc7;
-  min-height: 27em;
   border-radius: 1115px;
   margin: 10px;
-  transition: 0.7s ease; }
+  transition: 0.7s ease;
+  width: 75%;
+  margin: auto; }
 
 .Project-cards:hover {
   transform: scale(1.1); }
@@ -371,7 +379,7 @@ header {
 
 .footer-title {
   font-size: 1.1em;
-  font-weight: 700; }
+  font-weight: 600; }
 
 .footer-title span {
   color: #9c9cc7; }
@@ -379,7 +387,8 @@ header {
 /*project__details*/
 .project__details #carouselExampleControls {
   padding: 50px;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  padding-top: 0; }
   .project__details #carouselExampleControls .carousel-control-prev,
   .project__details #carouselExampleControls .carousel-control-next {
     opacity: 1; }
@@ -401,5 +410,12 @@ header {
     font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 50px; }
+
+.project__date {
+  width: 50%;
+  margin: auto;
+  padding: 50px 24px 4px 24px;
+  color: #9c9ec7;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

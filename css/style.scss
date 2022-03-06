@@ -25,7 +25,6 @@ $ligtRoseColor: #edcce7;
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
 
-
 header {
   background-color: #2b318f;
   width: 100%;
@@ -102,18 +101,24 @@ header {
   font-size: 1.2em;
   font-weight: 700;
 }
-
-.main h2 span {
+.intro {
+  font-size: 24px;
+}
+.main h2 {
   display: inline-block;
   margin-top: 0px;
   color: #9c9ec7;
   font-size: 2.3em;
   font-weight: 900;
+  .intro {
+    color: $mainColor;
+    font-size: 20px;
+  }
 }
 
 .main h3 {
   color: #2b318f;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -162,13 +167,14 @@ header {
     color: #2b318f;
     background-color: #edcce7;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: 700;
     display: inline-block;
     padding: 0.5em 2em;
     letter-spacing: 1px;
     border-radius: 15px;
     transition: 0.5s ease;
+    padding-bottom: 0.7em;
     @media (max-width: 991px) {
       font-size: 1rem;
     }
@@ -220,9 +226,15 @@ header {
 }
 
 @keyframes floating {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
-  to   { transform: translate(0, -0px); }    
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
 }
 
 .app {
@@ -272,19 +284,19 @@ header {
     flex-direction: column;
     h3 {
       font-weight: 700;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
     }
     a {
       text-decoration: none;
       font-weight: 700;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: $mainColor;
       text-transform: capitalize;
     }
   }
   .Project-image {
     img {
-      width: 90%;
+      width: 100%;
     }
   }
   .Project-info {
@@ -306,10 +318,11 @@ header {
 
 .Project-cards {
   background-color: #9c9cc7;
-  min-height: 27em;
   border-radius: 1115px;
   margin: 10px;
   transition: 0.7s ease;
+  width: 75%;
+  margin: auto;
 }
 
 .Project-cards:hover {
@@ -454,7 +467,7 @@ header {
 
 .footer-title {
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 600;
 }
 .footer-title span {
   color: #9c9cc7;
@@ -466,6 +479,7 @@ header {
   #carouselExampleControls {
     padding: 50px;
     padding-bottom: 0px;
+    padding-top: 0;
     .carousel-control-prev,
     .carousel-control-next {
       opacity: 1;
@@ -494,4 +508,12 @@ header {
       margin-bottom: 50px;
     }
   }
+}
+
+.project__date {
+  width: 50%;
+  margin: auto;
+  padding: 50px 24px 4px 24px;
+  color: $secColor;
+  font-size: 20px;
 }
