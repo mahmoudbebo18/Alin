@@ -389,7 +389,7 @@ header {
 
 /*project__details*/
 .project__details #carouselExampleControls {
-  padding: 50px;
+  padding: 67px 0;
   padding-bottom: 0px; }
   .project__details #carouselExampleControls .carousel-control-prev,
   .project__details #carouselExampleControls .carousel-control-next {
@@ -421,7 +421,7 @@ header {
   left: 0;
   z-index: 12;
   top: 0;
-  padding: 20px 24px 0; }
+  padding: 37px 0px 0; }
 
 .right__part__bg,
 .left__part__bg {
