@@ -13,10 +13,6 @@
   font-weight: 600; }
 /*global vars */
 /* CSS Document */
-body,
-* {
-  font-family: "Nunito Sans", sans-serif; }
-
 header {
   background-color: #2b318f;
   width: 100%;
@@ -89,7 +85,7 @@ header {
 
 .main h3 {
   color: #2b318f;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 10px;
@@ -113,18 +109,17 @@ header {
   .about__me .title {
     color: #fff;
     font-size: 2.5em;
-    font-weight: 900;
-    margin-bottom: 20px; }
+    font-weight: 900; }
     @media (max-width: 991px) {
       .about__me .title {
         font-size: 2em; } }
   .about__me p {
-    width: 75%;
-    font-size: 1.5rem;
+    width: 59%;
+    font-size: 1.4rem;
     color: #2b318f;
     font-weight: 700;
-    text-align: justify;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    line-height: 30px; }
     @media (max-width: 991px) {
       .about__me p {
         font-size: 1rem;
@@ -149,7 +144,11 @@ header {
     position: absolute;
     bottom: -30px;
     right: 20%;
-    color: #edcce7; }
+    color: #edcce7;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
     @media (min-width: 768px) and (max-width: 991px) {
       .about__me .fa-film {
         font-size: 7em;
@@ -164,7 +163,11 @@ header {
     position: absolute;
     right: -30px;
     top: 10%;
-    color: #edcce7; }
+    color: #edcce7;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; }
     @media (min-width: 768px) and (max-width: 991px) {
       .about__me .fa-bezier-curve {
         font-size: 7em;
@@ -177,6 +180,13 @@ header {
         color: #edcce7;
         font-size: 5em; } }
 
+@keyframes floating {
+  from {
+    transform: translate(0, 0px); }
+  65% {
+    transform: translate(0, 15px); }
+  to {
+    transform: translate(0, 0px); } }
 .app {
   background-color: #9c9ec7;
   width: 16em;
@@ -205,7 +215,7 @@ header {
   margin: 10px; }
 
 .Projects {
-  padding: 50px 0 200px 0; }
+  padding: 8px 0 75px 0; }
   .Projects h2 {
     font-weight: bold;
     color: #2b318f;
@@ -226,13 +236,13 @@ header {
       color: #2b318f;
       text-transform: capitalize; }
   .Projects .Project-image img {
-    width: 100%; }
+    width: 90%; }
   .Projects .Project-info {
     padding: 1em 2.8em 2em 2.8em; }
   .Projects .content {
-    margin-top: 30px; }
+    margin-bottom: 30px; }
   .Projects .transformed__content {
-    transform: translateY(150px);
+    transform: translateY(75px);
     position: relative;
     z-index: 99; }
 
@@ -287,7 +297,7 @@ header {
     font-weight: 700;
     font-size: 2.5em;
     color: #2b318f;
-    margin-bottom: 32px; }
+    margin-bottom: 16px; }
   .contact__me .form__part {
     background-color: #9c9ec7;
     border-radius: 15px; }
@@ -299,7 +309,8 @@ header {
         border-bottom: 1px solid #fff;
         background-color: transparent;
         margin-bottom: 24px;
-        padding: 0 12px 12px; }
+        padding: 0 12px 12px;
+        color: #fff; }
         .contact__me .form__part form input::placeholder {
           color: #fff;
           font-size: 18px; }
@@ -309,7 +320,9 @@ header {
         outline: none;
         padding: 8px;
         border-radius: 10px;
-        margin-bottom: 24px; }
+        margin-bottom: 24px;
+        color: #fff;
+        resize: none; }
         .contact__me .form__part form textarea::placeholder {
           color: #fff;
           font-size: 18px; }
@@ -347,7 +360,7 @@ header {
 .footer {
   background-color: #2b318f;
   color: #ffffff;
-  padding: 1.5em;
+  padding: 1em;
   display: flex;
   justify-content: space-between; }
 
@@ -366,7 +379,7 @@ header {
 /*project__details*/
 .project__details #carouselExampleControls {
   padding: 50px;
-  padding-bottom: 16px; }
+  padding-bottom: 0px; }
   .project__details #carouselExampleControls .carousel-control-prev,
   .project__details #carouselExampleControls .carousel-control-next {
     opacity: 1; }
@@ -386,6 +399,7 @@ header {
   .project__details .project__caption p {
     color: #2b318f;
     font-size: 1.3em;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */
