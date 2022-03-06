@@ -242,7 +242,7 @@ header {
       font-size: 1rem;
       color: #2b318f;
       text-transform: capitalize;
-      transition: .3s; }
+      transition: 0.3s; }
       .Projects .Project-title a:hover {
         color: #edcce7; }
   .Projects .Project-image img {
@@ -422,5 +422,18 @@ header {
   left: 31%;
   z-index: 12;
   top: 45px; }
+
+.right__part__bg,
+.left__part__bg {
+  position: absolute;
+  width: 36%; }
+
+.right__part__bg {
+  right: -207px;
+  top: 45px; }
+
+.left__part__bg {
+  bottom: -58%;
+  left: -267px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -292,8 +292,8 @@ header {
       font-size: 1rem;
       color: $mainColor;
       text-transform: capitalize;
-      transition: .3s;
-      &:hover{
+      transition: 0.3s;
+      &:hover {
         color: $ligtRoseColor;
       }
     }
@@ -514,7 +514,7 @@ header {
 }
 
 .project__date {
-  width: 50%; 
+  width: 50%;
   padding: 50px 24px 4px 24px;
   color: #9c9ec7;
   font-size: 18px;
@@ -522,4 +522,21 @@ header {
   left: 31%;
   z-index: 12;
   top: 45px;
+}
+
+.right__part__bg,
+.left__part__bg {
+  position: absolute;
+  width: 36%;
+  
+}
+.right__part__bg{
+  right: -207px;
+  top: 45px;
+}
+
+.left__part__bg{
+  bottom: -58%;
+  left: -267px;
+
 }
