@@ -481,7 +481,7 @@ header {
 
 .project__details {
   #carouselExampleControls {
-    padding: 67px 0 ;
+    padding: 50px 0 ;
     padding-bottom: 0px;
     .carousel-control-prev,
     .carousel-control-next {
@@ -495,7 +495,6 @@ header {
     }
   }
   .project__caption {
-    padding: 0 24px;
     width: 50%;
     margin: auto;
     h3 {
@@ -518,7 +517,7 @@ header {
   color: #9c9ec7;
   font-size: 17px;
   position: absolute;
-  left: 0;
+  left: -15px;
   z-index: 12;
   top: 0;
   padding: 37px 0px 0;
