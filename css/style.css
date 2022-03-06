@@ -137,11 +137,11 @@ header {
     font-size: 1.7em;
     font-weight: 700;
     display: inline-block;
-    padding: 0.5em 2em;
+    padding: 0.3em 1em;
     letter-spacing: 1px;
     border-radius: 15px;
     transition: 0.5s ease;
-    padding-bottom: 0.7em; }
+    padding-bottom: 0.4em; }
     @media (max-width: 991px) {
       .about__me a {
         font-size: 1rem; } }
@@ -241,7 +241,10 @@ header {
       font-weight: 700;
       font-size: 1rem;
       color: #2b318f;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      transition: .3s; }
+      .Projects .Project-title a:hover {
+        color: #edcce7; }
   .Projects .Project-image img {
     width: 100%; }
   .Projects .Project-info {
@@ -378,7 +381,7 @@ header {
   padding-right: 20px; }
 
 .footer-title {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600; }
 
 .footer-title span {
@@ -387,8 +390,7 @@ header {
 /*project__details*/
 .project__details #carouselExampleControls {
   padding: 50px;
-  padding-bottom: 0px;
-  padding-top: 0; }
+  padding-bottom: 0px; }
   .project__details #carouselExampleControls .carousel-control-prev,
   .project__details #carouselExampleControls .carousel-control-next {
     opacity: 1; }
@@ -413,9 +415,12 @@ header {
 
 .project__date {
   width: 50%;
-  margin: auto;
   padding: 50px 24px 4px 24px;
   color: #9c9ec7;
-  font-size: 20px; }
+  font-size: 18px;
+  position: absolute;
+  left: 31%;
+  z-index: 12;
+  top: 45px; }
 
 /*# sourceMappingURL=style.css.map */

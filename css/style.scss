@@ -170,11 +170,11 @@ header {
     font-size: 1.7em;
     font-weight: 700;
     display: inline-block;
-    padding: 0.5em 2em;
+    padding: 0.3em 1em;
     letter-spacing: 1px;
     border-radius: 15px;
     transition: 0.5s ease;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.4em;
     @media (max-width: 991px) {
       font-size: 1rem;
     }
@@ -292,6 +292,10 @@ header {
       font-size: 1rem;
       color: $mainColor;
       text-transform: capitalize;
+      transition: .3s;
+      &:hover{
+        color: $ligtRoseColor;
+      }
     }
   }
   .Project-image {
@@ -466,7 +470,7 @@ header {
 }
 
 .footer-title {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
 }
 .footer-title span {
@@ -479,7 +483,6 @@ header {
   #carouselExampleControls {
     padding: 50px;
     padding-bottom: 0px;
-    padding-top: 0;
     .carousel-control-prev,
     .carousel-control-next {
       opacity: 1;
@@ -511,9 +514,12 @@ header {
 }
 
 .project__date {
-  width: 50%;
-  margin: auto;
+  width: 50%; 
   padding: 50px 24px 4px 24px;
-  color: $secColor;
-  font-size: 20px;
+  color: #9c9ec7;
+  font-size: 18px;
+  position: absolute;
+  left: 31%;
+  z-index: 12;
+  top: 45px;
 }
