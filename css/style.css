@@ -426,14 +426,16 @@ header {
 .right__part__bg,
 .left__part__bg {
   position: absolute;
-  width: 30%; }
+  width: 33%; }
 
 .right__part__bg {
   right: -0;
   top: 45px; }
 
 .left__part__bg {
-  bottom: -59%;
-  left: 75px; }
+  width: 53%;
+  height: 70%;
+  bottom: -56%;
+  left: 0; }
 
 /*# sourceMappingURL=style.css.map */
