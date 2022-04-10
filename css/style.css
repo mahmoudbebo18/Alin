@@ -619,6 +619,7 @@
   .project__details #carouselExampleControls .carousel-control-next img,
   .project__details #carouselExampleControls .carousel-control-prev img {
     width: 40px;
+    margin-top: 50px;
   }
 }
 @media (max-width: 575px) {
@@ -627,6 +628,10 @@
   .project__details .date_holder {
     width: 75% !important;
   }
+  .project__details{
+    margin-bottom: 0;
+    min-height: calc(100vh - 180px);
+  }
   .project__details .project__caption h3 {
     font-size: 1.2rem;
   }
@@ -634,6 +639,6 @@
     font-size: 0.75rem;
   }
   .carousel-inner img{
-    max-height: 195px;
+    max-height: 288px;
   }
 }
