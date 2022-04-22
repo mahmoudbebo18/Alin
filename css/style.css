@@ -626,7 +626,6 @@
  }
 
  .carousel-inner img{
-   max-height: 300px;
    height: 100%;
  }
 
@@ -669,8 +668,32 @@
   .project__details .project__caption p {
     font-size: 0.75rem;
   }
-  .carousel-inner img{
-    max-height: 288px;
+  .carousel-item{
+    max-height: 250px;
   }
 }
 
+
+.img_md {
+  background-image: url(../images/sm_bg.png);
+  height:450px;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: 420px;
+  background-repeat: no-repeat;
+}
+
+@media(max-width:465px){
+  .footer_wrapper{
+    justify-content: center !important;
+    flex-direction: column-reverse
+  }
+  .footer_wrapper i {
+    font-size:22px
+  }
+  .footer-social-icons a{
+    padding-right: 37px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
