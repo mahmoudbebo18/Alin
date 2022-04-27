@@ -518,6 +518,11 @@
    font-size: 1em;
    font-weight: 600;
  }
+ @media(max-width:465px){
+  .footer-title{
+    font-size:13px
+  }
+ }
  .footer-title span {
    color: #9c9cc7;
  }
@@ -678,8 +683,7 @@
   background-image: url(../images/sm_bg.png);
   height:450px;
   background-position: bottom;
-  background-attachment: fixed;
-  background-size: 420px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -689,10 +693,10 @@
     flex-direction: column-reverse
   }
   .footer_wrapper i {
-    font-size:22px
+    font-size:29px
   }
   .footer-social-icons a{
-    padding-right: 37px;
+    padding-right: 24px;
     margin-bottom: 10px;
     display: inline-block;
   }
